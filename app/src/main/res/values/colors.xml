@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3889a7</color>
+    <color name="colorPrimaryDark">#33b5e5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#dedede</color>
+    
+    <color name="toast_bg">#dddfe0</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="news_unread">#000000</color>
+    <color name="news_read">#898989</color>
+    <color name="skip_bg_p">#df000000</color>
+    <color name="skip_bg_n">#81000000</color>
+    <color name="bottom_text">#a9a9a9</color>
+    
+   
+</resources>

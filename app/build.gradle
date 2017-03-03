@@ -1,0 +1,103 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'android-apt'
+apply plugin: 'com.neenbedankt.android-apt'//dagger
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        applicationId "com.lzm.shijie"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+    lintOptions{
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testCompile 'junit:junit:4.12'
+    //日志系统
+    compile 'com.orhanobut:logger:1.15'
+    //内存泄漏检测系统(不同编译使用不同版本)
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    //检测程序卡顿位置（原理就是利用了主线程的handler以及looper的消息传输时间差来检查
+    // 如果传输的时间过长，则表示卡顿了，反之则没有问题）
+    debugCompile 'com.github.moduth:blockcanary-android:1.2.1'
+    releaseCompile 'com.github.moduth:blockcanary-no-op:1.2.1'
+    //腾讯tbs SDK
+    compile files('libs/tbs_sdk_thirdapp_v3.0.0.1038_43000_sharewithdownload_obfs_20170110_144724.jar')
+    //为"单Activity ＋ 多Fragment","多模块Activity + 多Fragment"架构而生
+    compile 'me.yokeyword:fragmentation:0.10.1'
+    //0.8.0版本后isSupportHidden（）方法不在暴露给外部
+
+    //Butter Knife
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    //dagger2
+    compile 'com.google.dagger:dagger:2.0'
+    apt 'com.google.dagger:dagger-compiler:2.0'
+    //提供dagger2注解库，不然会报错 Error:(7, 24) 错误: 程序包javax.annotation不存在
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+    //提供rxjava和rxAndroid
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    //network
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    //Retrofit2所需要的包
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    //ConverterFactory的String依赖包
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //图片加载库 glide
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    //ui
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+    compile 'com.wang.avi:library:2.1.3'
+    compile 'net.opacapp:multiline-collapsingtoolbar:1.2.2'
+    //progress 等待
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    //友盟统计
+    compile files('libs/MobCommons-2017.0216.1054.jar')
+    compile files('libs/MobTools-2017.0216.1054.jar')
+    compile files('libs/ShareSDK-Core-2.8.1.jar')
+    compile files('libs/ShareSDK-Douban-2.8.1.jar')
+    compile files('libs/ShareSDK-Evernote-2.8.1.jar')
+    compile files('libs/ShareSDK-QQ-2.8.1.jar')
+    compile files('libs/ShareSDK-QZone-2.8.1.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.8.1.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.8.1.jar')
+    compile files('libs/ShareSDK-TencentWeibo-2.8.1.jar')
+    compile files('libs/ShareSDK-Wechat-2.8.1.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.8.1.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.8.1.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.8.1.jar')
+    compile project(':viewPagerlibrary')
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout_meipai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            app:tabIndicatorColor="@color/white"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/white"/>
+            <!--app:tabIndicatorColor="@color/white"                 // 下方滚动的下划线颜色-->
+            <!--app:tabSelectedTextColor="@color/gray"               // tab被选中后，文字的颜色-->
+            <!--app:tabTextColor="@color/white"                      // tab默认的文字颜色-->
+        <ImageView
+            android:id="@+id/menu_meipaimanager"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/meipaimaneger_item" />
+    </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_meipai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

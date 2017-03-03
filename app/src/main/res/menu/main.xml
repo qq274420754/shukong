@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="咨讯">
+        <menu>
+            <item 
+                android:id="@+id/drawer_zhihu"
+                android:title="知乎日报"
+                android:checkable="true"
+                android:checked="true"
+                android:icon="@drawable/drawer_zhihu">
+            </item>
+            <item
+                android:id="@+id/drawer_meipai"
+                android:title="美拍视频"
+                android:checkable="true"
+                android:icon="@drawable/drawer_meipai">
+            </item>
+            <item
+                android:id="@+id/drawer_chengxuyuan"
+                android:title="程序猿"
+                android:checkable="true"
+                android:icon="@drawable/drawer_chengxu">
+            </item>
+            <item
+                android:id="@+id/drawer_fuli"
+                android:title="福利"
+                android:checkable="true"
+                android:icon="@drawable/drawer_fuli">
+            </item>
+        </menu>
+    </item>
+    <item android:title="选项">
+        <menu>
+            <item
+                android:id="@+id/drawer_shoucang"
+                android:title="收藏"
+                android:checkable="true"
+                android:icon="@drawable/drawer_shoucang">
+            </item>
+            <item
+                android:id="@+id/drawer_shezhi"
+                android:title="设置"
+                android:checkable="true"
+                android:icon="@drawable/drawer_shezhi">
+            </item>
+            <item
+                android:id="@+id/drawer_guanyu"
+                android:title="关于"
+                android:checkable="true"
+                android:icon="@drawable/drawer_guanyu">
+            </item>
+        </menu>
+    </item>
+</menu>
