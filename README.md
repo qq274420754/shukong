@@ -10,7 +10,7 @@ shukong，a reading app  Material Design + MVP + RxJava + Retrofit + Dagger2 + R
 
 
 
-        阅读内容包括：
+<br>阅读内容包括:\<br>
 [知乎日报](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90)：汇集知乎上的热门话题和新鲜事。
 [美拍视频](http://open.meipai.com/resource/api)：美拍视频的开发基础接口，海量视频。
 [干货集中营](http://gank.io/api)：每天都会提供很多的技术干货。
