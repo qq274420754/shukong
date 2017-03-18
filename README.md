@@ -17,28 +17,22 @@ shukong，a reading app  Material Design + MVP + RxJava + Retrofit + Dagger2 + R
 <br>[花瓣网API](http://huaban.com/)：花瓣网, 设计师寻找灵感的天堂!图片素材领导者。
 <br>另外还有一个[获取图片网址](https://unsplash.it/)。这个网址可以指定获取图片大小，随机获取，和模糊或灰度的摄影网址，我用作APP闪屏页。
     
-    ![启动](http://img.blog.csdn.net/20170318153335452?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ0ODc5Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)  
-    ![预览](http://img.blog.csdn.net/20170318153434202)  
-    ![01](http://img.blog.csdn.net/20170318153452156)  
-    ![02](http://img.blog.csdn.net/20170318153636675)  
-    ![03](http://img.blog.csdn.net/20170318153657063)  
-    ![04](http://img.blog.csdn.net/20170318153711145)  
-    ![05](http://img.blog.csdn.net/20170318153721907)  
-    ![06](http://img.blog.csdn.net/20170318153732516)  
+    ![启动](http://img.blog.csdn.net/20170318153335452?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ0ODc5Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)  
+    ![预览](http://img.blog.csdn.net/20170318153434202)  ![01](http://img.blog.csdn.net/20170318153452156)  ![02](http://img.blog.csdn.net/20170318153636675)  ![03](http://img.blog.csdn.net/20170318153657063)  ![04](http://img.blog.csdn.net/20170318153711145)  ![05](http://img.blog.csdn.net/20170318153721907)  ![06](http://img.blog.csdn.net/20170318153732516)  
 
-<br>* 使用RxJava配合Retrofit2做网络请求
-<br>* 使用RxUtil对线程操作和网络请求结果处理做了封装
-<br>* 使用RxPresenter对订阅的生命周期做管理
-<br>* 使用RxBus来方便组件间的通信
-<br>* 使用RxJava其他操作符来做延时、轮询、转化、筛选等操作
-<br>* 使用okhttp3对网络返回内容做缓存，还有日志、超时重连、头部消息的配置
-<br>* 使用Material Design控件和动画
-<br>* 使用MVP架构整个项目，对应于model、ui、presenter三个包
-<br>* 使用Dagger2将M层注入P层，将P层注入V层，无需new，直接调用对象
-<br>* 使用Realm做阅读记录和收藏记录的增、删、查、改使用Glide做图片的处理和加载
-<br>* 使用Fragmentation简化Fragment的操作和懒加载
-<br>* 使用RecyclerView实现下拉刷新、上拉加载、侧滑删除、长按拖曳
-<br>* 使用x5WebView做阅览页，比原生WebView体验更佳
+<br> * 使用RxJava配合Retrofit2做网络请求
+<br> * 使用RxUtil对线程操作和网络请求结果处理做了封装
+<br> * 使用RxPresenter对订阅的生命周期做管理
+<br> * 使用RxBus来方便组件间的通信
+<br> * 使用RxJava其他操作符来做延时、轮询、转化、筛选等操作
+<br> * 使用okhttp3对网络返回内容做缓存，还有日志、超时重连、头部消息的配置
+<br> * 使用Material Design控件和动画
+<br> * 使用MVP架构整个项目，对应于model、ui、presenter三个包
+<br> * 使用Dagger2将M层注入P层，将P层注入V层，无需new，直接调用对象
+<br> * 使用Realm做阅读记录和收藏记录的增、删、查、改使用Glide做图片的处理和加载
+<br> * 使用Fragmentation简化Fragment的操作和懒加载
+<br> * 使用RecyclerView实现下拉刷新、上拉加载、侧滑删除、长按拖曳
+<br> * 使用x5WebView做阅览页，比原生WebView体验更佳
 
 <br>Dagger2配合MVP的架构来自Hot，另外还参考了很多大神的类似作品.
 <br>[iconfont](http://www.iconfont.cn/) 寻找icon素材
