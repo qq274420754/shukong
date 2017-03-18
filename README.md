@@ -17,6 +17,7 @@ shukong，a reading app  Material Design + MVP + RxJava + Retrofit + Dagger2 + R
 <br>[花瓣网API](http://huaban.com/)：花瓣网, 设计师寻找灵感的天堂!图片素材领导者。
 <br>另外还有一个[获取图片网址](https://unsplash.it/)。这个网址可以指定获取图片大小，随机获取，和模糊或灰度的摄影网址，我用作APP闪屏页。
     
+    ![启动](http://img.blog.csdn.net/20170318153335452?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ0ODc5Nzc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)  
     
   
 
