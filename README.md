@@ -20,23 +20,24 @@ shukong，a reading app  Material Design + MVP + RxJava + Retrofit + Dagger2 + R
     
   
 
-使用RxJava配合Retrofit2做网络请求
-使用RxUtil对线程操作和网络请求结果处理做了封装
-使用RxPresenter对订阅的生命周期做管理
-使用RxBus来方便组件间的通信
-使用RxJava其他操作符来做延时、轮询、转化、筛选等操作
-使用okhttp3对网络返回内容做缓存，还有日志、超时重连、头部消息的配置
-使用Material Design控件和动画
-使用MVP架构整个项目，对应于model、ui、presenter三个包
-使用Dagger2将M层注入P层，将P层注入V层，无需new，直接调用对象
-使用Realm做阅读记录和收藏记录的增、删、查、改使用Glide做图片的处理和加载
-使用Fragmentation简化Fragment的操作和懒加载
-使用RecyclerView实现下拉刷新、上拉加载、侧滑删除、长按拖曳
-使用x5WebView做阅览页，比原生WebView体验更佳
+<br>*使用RxJava配合Retrofit2做网络请求
+<br>*使用RxUtil对线程操作和网络请求结果处理做了封装
+<br>*使用RxPresenter对订阅的生命周期做管理
+<br>*使用RxBus来方便组件间的通信
+<br>*使用RxJava其他操作符来做延时、轮询、转化、筛选等操作
+<br>*使用okhttp3对网络返回内容做缓存，还有日志、超时重连、头部消息的配置
+<br>*使用Material Design控件和动画
+<br>*使用MVP架构整个项目，对应于model、ui、presenter三个包
+<br>*使用Dagger2将M层注入P层，将P层注入V层，无需new，直接调用对象
+<br>*使用Realm做阅读记录和收藏记录的增、删、查、改使用Glide做图片的处理和加载
+<br>*使用Fragmentation简化Fragment的操作和懒加载
+<br>*使用RecyclerView实现下拉刷新、上拉加载、侧滑删除、长按拖曳
+<br>*使用x5WebView做阅览页，比原生WebView体验更佳
 
-Dagger2配合MVP的架构来自Hot，另外还参考了很多大神的类似作品.
-iconfont 寻找icon素材
-技术点：rxjava,Retrofit, MVP, OkHttp, ShareSDK分享,Glide图片加载, 友盟统计.换肤技术
+<br>Dagger2配合MVP的架构来自Hot，另外还参考了很多大神的类似作品.
+<br>[iconfont](http://www.iconfont.cn/) 寻找icon素材
+<br>技术点：[rxjava](http://gank.io/post/560e15be2dca930e00da1083),
+[Retrofit](http://www.jianshu.com/p/1ef0ba0bccc6), MVP, OkHttp, ShareSDK分享,[Glide图片加载](https://mrfu.me/2016/02/27/Glide_Image_Resizing_&_Scaling/), 友盟统计.[换肤技术](http://blog.zhaiyifan.cn/2015/09/10/Android%E6%8D%A2%E8%82%A4%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/)
 
 
 
