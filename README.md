@@ -23,7 +23,7 @@ shukong，a reading app  Material Design + MVP + RxJava + Retrofit + Dagger2 + R
 ![02](http://img.blog.csdn.net/20170318153636675) 
 ![03](http://img.blog.csdn.net/20170318153657063)
 ![04](http://img.blog.csdn.net/20170318153711145)  
-![05](http://img.blog.csdn.net/20170318153721907) ![06](http://img.blog.csdn.net/20170318153732516)  
+![06](http://img.blog.csdn.net/20170318153732516)  
     
 <br> * 使用RxJava配合Retrofit2做网络请求
 <br> * 使用RxUtil对线程操作和网络请求结果处理做了封装
